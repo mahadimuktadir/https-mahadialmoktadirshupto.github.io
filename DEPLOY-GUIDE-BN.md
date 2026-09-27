@@ -1,6 +1,6 @@
 # পোর্টফোলিও ওয়েবসাইট আপডেট ও প্রকাশ
 
-লাইভ সাইট: https://mahadimuktadir.github.io/https-mahadialmoktadirshupto.github.io/
+লাইভ সাইট: https://mahadimuktadir.github.io/
 
 এই repository-র `main` branch-এর `/ (root)` ফোল্ডার থেকেই GitHub Pages সাইট প্রকাশ করে। `index.html` এবং `assets/` একই root folder-এ থাকবে। ZIP ফাইলটি সরাসরি upload করলে সাইট আপডেট হবে না।
 
