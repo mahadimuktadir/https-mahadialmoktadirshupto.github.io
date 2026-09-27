@@ -2,7 +2,7 @@
 
 Portfolio for Mahadi Al Moktadir, published at:
 
-https://mahadimuktadir.github.io/
+https://mahadialmoktadir.github.io/
 
 GitHub Pages publishes `main` from `/ (root)`. Keep `index.html` and the `assets` folder at the repository root.
 
