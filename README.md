@@ -1,54 +1,23 @@
 # Mahadi Al Moktadir — Portfolio Website
 
-Professional static portfolio website for **Mahadi Al Moktadir** — Special Correspondent, Multimedia Journalist, Documentary Producer & Education Specialist.
+Portfolio for Mahadi Al Moktadir, published at:
 
-## Main files
+https://mahadimuktadir.github.io/https-mahadialmoktadirshupto.github.io/
 
-- `index.html` — all website content and sections
-- `assets/css/style.css` — design, responsive layout and the 3 visual themes
-- `assets/js/main.js` — mobile menu, theme switcher, filters, gallery lightbox and copy-email buttons
-- `assets/images/thumbnails/` — 8 portfolio thumbnails
-- `assets/images/gallery/` — field archive photographs
-- `assets/docs/mahadi-al-moktadir-cv.pdf` — downloadable CV
+GitHub Pages publishes `main` from `/ (root)`. Keep `index.html` and the `assets` folder at the repository root.
 
-## Publish on GitHub Pages
+## Edit the site
 
-If your GitHub username is `mahadimuktadir`, your repository should be named exactly:
+- `index.html` — all text, work links, contact details, gallery captions and which real photo appears with each report.
+- `assets/css/style.css` — layout, mobile styles and the Midnight, Editorial and Light themes.
+- `assets/js/main.js` — mobile menu, filters, gallery viewer, theme switcher and copy-email buttons.
+- `assets/images/gallery/` — authentic reporting photos. Replace a photo using the same filename to update both the field archive and any work card that uses it. The archive shows each image at its natural aspect ratio.
+- `assets/images/mahadi-field-hero.webp` — wide opening image.
+- `profile.jpg.jpg` — centered professional portrait in the About section.
+- `mahadi-al-moktadir-cv.pdf` — PDF opened by both CV buttons.
 
-`mahadimuktadir.github.io`
+The Selected Work cards use actual photographs from the field archive. The previously generated thumbnails have been removed. To change a report image, edit its `<img src="...">` in `index.html` to another photo in `assets/images/gallery/`.
 
-Upload **the contents of this folder** to the root of that repository. `index.html` must be visible at the top level of the repository, not inside another folder.
+## Publish an update
 
-Then go to:
-
-**Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save**
-
-## Update the CV
-
-Replace:
-
-`assets/docs/mahadi-al-moktadir-cv.pdf`
-
-with a newer PDF using the **same filename**. No code change is needed.
-
-## Replace a thumbnail
-
-Put the new image into `assets/images/thumbnails/` using the same filename. Recommended size: **1280 × 720 (16:9)**.
-
-## Replace a gallery photo
-
-Put the new image into `assets/images/gallery/` using the same filename. WebP or JPG is recommended.
-
-## Change text
-
-Open `index.html` in GitHub and click the pencil icon. Search for the exact text you want to change, edit it, and commit.
-
-## Design themes
-
-The site includes 3 built-in visual designs:
-
-1. Midnight — dark newsroom / documentary look
-2. Editorial — warm magazine / print-inspired look
-3. Light — clean modern professional look
-
-Visitors can switch designs from the **Design** control in the navigation.
+Commit changes to `main`. GitHub Pages builds and publishes automatically from the repository root. Check **Actions** for the latest `pages build and deployment` run if an update does not appear. Refresh the site with Ctrl+F5 after a successful deployment.
