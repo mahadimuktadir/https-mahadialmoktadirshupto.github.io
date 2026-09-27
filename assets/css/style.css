@@ -149,7 +149,7 @@ a.affiliation-card:hover { transform: translateY(-4px); border-color: color-mix(
 .work-image { position: relative; display: block; aspect-ratio: 16/9; overflow: hidden; background: var(--bg-elev); }
 .work-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .5s ease; }
 .work-card:hover .work-image img { transform: scale(1.025); }
-.play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: rgba(5,18,26,.74); color: white; border: 1px solid rgba(255,255,255,.35); backdrop-filter: blur(8px); padding-left: 3px; }
+.play { position: absolute; right: 16px; bottom: 16px; width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: rgba(5,18,26,.84); color: white; border: 1px solid rgba(255,255,255,.5); backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,.28); padding-left: 3px; }
 .work-body { padding: 24px; }
 .work-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .work-tags span { padding: 5px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: .69rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
