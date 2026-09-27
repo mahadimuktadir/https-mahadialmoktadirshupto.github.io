@@ -1,132 +1,17 @@
-# GitHub Portfolio Upload Guide — বাংলা
+# পোর্টফোলিও ওয়েবসাইট আপডেট ও প্রকাশ
 
-## ১) Repository নাম ঠিক করুন
+লাইভ সাইট: https://mahadimuktadir.github.io/https-mahadialmoktadirshupto.github.io/
 
-GitHub Pages-এর personal website repository অবশ্যই আপনার GitHub username-এর সাথে মিলতে হবে:
+এই repository-র `main` branch-এর `/ (root)` ফোল্ডার থেকেই GitHub Pages সাইট প্রকাশ করে। `index.html` এবং `assets/` একই root folder-এ থাকবে। ZIP ফাইলটি সরাসরি upload করলে সাইট আপডেট হবে না।
 
-`YOUR-USERNAME.github.io`
+## কীভাবে পরিবর্তন করবেন
 
-Screenshot-এ commit author হিসেবে `mahadimuktadir` দেখা যাচ্ছে। **যদি এটিই আপনার GitHub username হয়**, repository নাম করুন:
+- লেখা, রিপোর্টের লিংক, ইমেইল ও গ্যালারির caption: `index.html`
+- রং, layout, mobile design: `assets/css/style.css`
+- menu, filter, gallery viewer: `assets/js/main.js`
+- আসল রিপোর্টিং ছবি: `assets/images/gallery/` — একই নামে ছবি replace করলে gallery ও সংশ্লিষ্ট report card আপডেট হবে। ছবির অনুপাত gallery-তে অক্ষত থাকে।
+- প্রথম পৃষ্ঠার wide ছবি: `assets/images/mahadi-field-hero.webp`
+- About section-এর portrait: `profile.jpg.jpg`
+- CV: `mahadi-al-moktadir-cv.pdf`
 
-`mahadimuktadir.github.io`
-
-বর্তমান `https-mahadialmoktadirshupto.github.io` নামটি GitHub Pages user-site naming format নয়।
-
-Rename করতে:
-
-**Repository → Settings → General → Repository name → Rename**
-
-## ২) পুরনো README রাখতে পারেন, কিন্তু website-এর জন্য index.html লাগবে
-
-Website চালু করার মূল ফাইল:
-
-`index.html`
-
-এটি repository-এর একদম root-এ থাকতে হবে।
-
-## ৩) এই package extract করুন
-
-Extract করার পর এই structure পাবেন:
-
-```
-index.html
-README.md
-DEPLOY-GUIDE-BN.md
-assets/
-  css/
-    style.css
-  js/
-    main.js
-  docs/
-    mahadi-al-moktadir-cv.pdf
-  images/
-    mahadi-profile.webp
-    mahadi-field-hero.webp
-    thumbnails/
-    gallery/
-```
-
-## ৪) GitHub-এ upload করুন
-
-Repository-তে যান:
-
-**Add file → Upload files**
-
-Extract করা folder-এর **ভিতরের সব file/folder** drag-and-drop করুন।
-
-খেয়াল রাখবেন `index.html` যেন repository root-এ থাকে।
-
-তারপর নিচে:
-
-**Commit changes**
-
-## ৫) GitHub Pages চালু করুন
-
-**Settings → Pages**
-
-Build and deployment:
-
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/(root)`
-- Save
-
-কয়েক মিনিট পর site live হবে।
-
-## ৬) CV কোথায় থাকবে?
-
-CV রাখা হয়েছে:
-
-`assets/docs/mahadi-al-moktadir-cv.pdf`
-
-Website-এর `View CV` এবং `Open full CV` button ইতোমধ্যে এই PDF-এর সাথে connected।
-
-নতুন CV হলে শুধু পুরনো PDF replace করবেন, filename একই রাখবেন।
-
-## ৭) Photo কীভাবে বদলাবেন?
-
-### Hero image
-
-`assets/images/mahadi-field-hero.webp`
-
-একই filename দিয়ে নতুন photo replace করলে code edit লাগবে না।
-
-### Profile photo
-
-`assets/images/mahadi-profile.webp`
-
-### Video thumbnails
-
-`assets/images/thumbnails/`
-
-Recommended size: `1280 × 720 px`, ratio `16:9`.
-
-### Field gallery
-
-`assets/images/gallery/`
-
-## ৮) Text change করবেন কোথায়?
-
-GitHub-এ `index.html` খুলুন → pencil/edit icon → text search করুন → edit → **Commit changes**.
-
-## ৯) Design change
-
-Navigation-এর **Design** option থেকে 3টি theme আছে:
-
-- Midnight
-- Editorial
-- Light
-
-Default design: Midnight.
-
-Theme-এর colors পরিবর্তন করতে `assets/css/style.css` file-এর উপরের CSS variables edit করুন।
-
-## ১০) Email change
-
-`index.html`-এ search করুন:
-
-- `mahadi.csb@frosnews.org`
-- `mahadi.sc@csbnewsusa.org`
-- `mahadialmoktadir@gmail.com`
-
-প্রয়োজনে replacement করে commit করুন।
+Edit করে `main` branch-এ commit দিন। **Actions → pages build and deployment**-এ সফল build দেখার পর সাইটে Ctrl+F5 দিন। GitHub Pages-এর **Settings → Pages**-এ source থাকবে **Deploy from a branch → main → / (root)**।
