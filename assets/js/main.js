@@ -4,7 +4,9 @@ const navMenu = document.getElementById('navMenu');
 const toast = document.getElementById('toast');
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightboxImage');
+const lightboxCaption = document.getElementById('lightboxCaption');
 const lightboxClose = document.getElementById('lightboxClose');
+let lastGalleryTrigger = null;
 
 // Mobile navigation
 menuToggle?.addEventListener('click', () => {
@@ -69,17 +71,24 @@ document.querySelectorAll('.copy-email').forEach(button => {
 // Gallery lightbox
 document.querySelectorAll('.gallery-item').forEach(item => {
   item.addEventListener('click', () => {
+    lastGalleryTrigger = item;
     lightboxImage.src = item.dataset.full;
+    lightboxImage.alt = item.querySelector('img')?.alt || 'Field archive photograph';
+    lightboxCaption.textContent = item.closest('.gallery-figure')?.querySelector('figcaption strong')?.textContent || '';
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
   });
 });
 function closeLightbox() {
+  if (!lightbox.classList.contains('open')) return;
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
   lightboxImage.removeAttribute('src');
+  lightboxCaption.textContent = '';
   document.body.style.overflow = '';
+  lastGalleryTrigger?.focus();
 }
 lightboxClose?.addEventListener('click', closeLightbox);
 lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
