@@ -2,7 +2,7 @@
 
 Portfolio for Mahadi Al Moktadir, published at:
 
-https://mahadimuktadir.github.io/https-mahadialmoktadirshupto.github.io/
+https://mahadimuktadir.github.io/
 
 GitHub Pages publishes `main` from `/ (root)`. Keep `index.html` and the `assets` folder at the repository root.
 
@@ -12,6 +12,7 @@ GitHub Pages publishes `main` from `/ (root)`. Keep `index.html` and the `assets
 - `assets/css/style.css` — layout, mobile styles and the Midnight, Editorial and Light themes.
 - `assets/js/main.js` — mobile menu, filters, gallery viewer, theme switcher and copy-email buttons.
 - `assets/images/gallery/` — authentic reporting photos. Replace a photo using the same filename to update both the field archive and any work card that uses it. The archive shows each image at its natural aspect ratio.
+- `assets/images/gallery/voters-street-interview.png` — authentic voter interview used by the “What Do Voters Want?” work card.
 - `assets/images/mahadi-field-hero.webp` — wide opening image.
 - `profile.jpg.jpg` — centered professional portrait in the About section.
 - `mahadi-al-moktadir-cv.pdf` — PDF opened by both CV buttons.
